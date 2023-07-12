@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Home Page</title>
+    <!-- build:css -->
+    <link rel="stylesheet" href="assets/vendor/css/animate.css">
+    <link rel="stylesheet" href="assets/vendor/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/vendor/css/select2.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<!-- endbuild -->
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body class="is-home-page">
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-3 col-md-2">
+              <a href="home.html" class="logo">
+                <svg width="160" height="30">
+                  <use xlink:href="assets/img/sprite.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="col-1 col-md-6 col-lg-7 order-4 order-md-0 position-static">
+              <button class="burger header__burger btn-reset d-flex d-lg-none js-open-mobile-menu">
+                <span></span><span></span><span></span>
+              </button>
+              <nav class="nav header__nav js-mobile-menu">
+                <button class="nav__close d-flex d-lg-none btn-reset top-nav__close p-0 js-close-mobile-menu">
+                  <svg width="22" height="21">
+                    <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                  </svg>
+                </button>
+                <ul class="nav__list">
+                  <li class="nav__item is-active"><a href="about.html" class="nav__link">About</a></li>
+                  <li class="nav__item"><a href="news.html" class="nav__link">News</a></li>
+                  <li class="nav__item"><a href="contacts.html" class="nav__link">Contacts</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-8 col-md-4 col-lg-3">
+              <div class="header__right">
+    <!--            <div class="change-lang header__lang">EN</div>-->
+                <select class="change-lang js-select-lang header__lang" name="lang">
+                  <option value="EN" selected="selected">EN</option>
+                  <option value="RU">RU</option>
+                  <option value="DE">DE</option>
+                  <option value="ES">ES</option>
+                </select>
+                <button class="btn-reset header__callback">
+                  <svg width="20" height="16">
+                    <use xlink:href="assets/img/sprite.svg#icon-mail"></use>
+                  </svg>
+                </button>
+                <button class="btn-reset btn btn_blue header__login">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-login"></use>
+                    </svg>
+                    <span>Sign in</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-2">
+              <a href="catalog.html" class="btn btn_orange btn_upper header__catalog-btn">Catalog</a>
+            </div>
+            <div class="col-sm-7 col-lg-8">
+              <form class="search header__search">
+                <input placeholder="Enter the name of the goods" autocomplete="off" class="search__input"
+                       type="search" name="search" id="search">
+                <button class="search__submit btn-reset">
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="col-sm-3 col-lg-2">
+              <div class="mini-cart header__cart">
+                <div class="mini-cart__icon">
+                  <svg width="20" height="20">
+                    <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
+                  </svg>
+                  <div class="mini-cart__count">23</div>
+                </div>
+                <div class="mini-cart__info">
+                  <p class="mini-cart__products">14 products</p>
+                  <p class="mini-cart__sum">534 EUR</p>
+                </div>
+                <svg class="mini-cart__arrow" width="16" height="8">
+                  <use xlink:href="assets/img/sprite.svg#arrow1"></use>
+                </svg>
+                <a href="cart.html" class="mini-cart__link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main role="main" class="main">
+        <section class="hero">
+          <div class="hero__inner swiper js-hero-slider">
+            <div class="swiper-wrapper">
+              <!--  SLIDE ONE-->
+              <div class="swiper-slide hero__item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p class="hero__title">Consumables for elemental analyzers of all manufacturers</p>
+                      <p class="hero__subtitle">Our online store offers reagents and consumables for elemental analyzers of all
+                        manufacturers.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- SLIDE END-->
+              <!--  SLIDE TWO-->
+              <div class="swiper-slide hero__item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p class="hero__title">Consumables for elemental analyzers of all manufacturers</p>
+                      <p class="hero__subtitle">Our online store offers reagents and consumables for elemental analyzers of all
+                        manufacturers.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- SLIDE END-->
+              <!--  SLIDE THREE-->
+              <div class="swiper-slide hero__item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p class="hero__title">Consumables for elemental analyzers of all manufacturers</p>
+                      <p class="hero__subtitle">Our online store offers reagents and consumables for elemental analyzers of all
+                        manufacturers.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- SLIDE END-->
+            </div>
+            <div class="slider-navigation hero__navigation container">
+              <div class="swiper-button-prev slider-navigation__btn slider-navigation__btn_prev">
+                <svg width="40" height="40">
+                  <use xlink:href="assets/img/sprite.svg#slider-arrow-left"></use>
+                </svg>
+              </div>
+              <div class="swiper-button-next slider-navigation__btn slider-navigation__btn_next">
+                <svg width="40" height="40">
+                  <use xlink:href="assets/img/sprite.svg#slider-arrow-right"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="populars">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-7">
+                <div class="section-number mb-3">
+                  <svg width="16" height="16">
+                    <use xlink:href="assets/img/sprite.svg#section-icon"></use>
+                  </svg>
+                  <p class="section-number__caption">01</p>
+                  <p class="section-number__caption">—</p>
+                  <p class="section-number__caption">products</p>
+                </div>
+                <h2 class="title-h2 populars__title">Popular products</h2>
+              </div>
+              <div class="col-md-5">
+                <a href="catalog.html" class="btn btn_orange btn_upper populars__all-btn">Watch all products</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="swiper js--popular-product">
+                  <div class="swiper-wrapper">
+                    <div class="popular__item swiper-slide">
+                      <div class="cat-product">
+                        <img src="assets/img/pr-01.jpg" alt="" class="cat-product__img">
+                        <div class="cat-product__inner">
+                          <p class="cat-product__caption">Halogen absorber complete with U-tube
+                          </p>
+                          <div class="cat-product__flex">
+                            <p class="cat-product__article">Catalog number</p>
+                            <p class="cat-product__article"><span>X4021</span></p>
+                          </div>
+                          <div class="cat-product__flex">
+                            <p class="cat-product__price">9999 EUR</p>
+                            <button class="btn-reset btn btn_orange btn_add-to-cart js-add-to-cart cat-product__add-to-cart ">
+                              <svg width="18" height="18">
+                                <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
+                              </svg>
+                              <span>Add to cart</span>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="" class="cat-product__link lnk"></a>
+                      </div>
+                    </div>
+                    <div class="popular__item swiper-slide">
+                      <div class="cat-product">
+                        <img src="assets/img/pr-02.jpg" alt="" class="cat-product__img">
+                        <div class="cat-product__inner">
+                          <p class="cat-product__caption">Halogen absorber complete with U-tube
+                          </p>
+                          <div class="cat-product__flex">
+                            <p class="cat-product__article">Catalog number</p>
+                            <p class="cat-product__article"><span>X4021</span></p>
+                          </div>
+                          <div class="cat-product__flex">
+                            <p class="cat-product__price">9999 EUR</p>
+                            <button class="btn-reset btn btn_orange btn_add-to-cart js-add-to-cart cat-product__add-to-cart">
+                              <svg width="18" height="18">
+                                <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
+                              </svg>
+                              <span>Add to cart</span>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="" class="cat-product__link lnk"></a>
+                      </div>
+                    </div>
+                    <div class="popular__item swiper-slide">
+                      <div class="cat-product">
+                        <img src="assets/img/pr-03.jpg" alt="" class="cat-product__img">
+                        <div class="cat-product__inner">
+                          <p class="cat-product__caption">Halogen absorber complete with U-tube
+                          </p>
+                          <div class="cat-product__flex">
+                            <p class="cat-product__article">Catalog number</p>
+                            <p class="cat-product__article"><span>X4021</span></p>
+                          </div>
+                          <div class="cat-product__flex">
+                            <p class="cat-product__price">9999 EUR</p>
+                            <button class="btn-reset btn btn_orange btn_add-to-cart js-add-to-cart cat-product__add-to-cart">
+                              <svg width="18" height="18">
+                                <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
+                              </svg>
+                              <span>Add to cart</span>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="" class="cat-product__link lnk"></a>
+                      </div>
+                    </div>
+                    <div class="popular__item swiper-slide">
+                      <div class="cat-product">
+                        <img src="assets/img/pr-04.jpg" alt="" class="cat-product__img">
+                        <div class="cat-product__inner">
+                          <p class="cat-product__caption">Halogen absorber complete with U-tube
+                          </p>
+                          <div class="cat-product__flex">
+                            <p class="cat-product__article">Catalog number</p>
+                            <p class="cat-product__article"><span>X4021</span></p>
+                          </div>
+                          <div class="cat-product__flex">
+                            <p class="cat-product__price">9999 EUR</p>
+                            <button class="btn-reset btn btn_orange btn_add-to-cart js-add-to-cart cat-product__add-to-cart">
+                              <svg width="18" height="18">
+                                <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
+                              </svg>
+                              <span>Add to cart</span>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="" class="cat-product__link lnk"></a>
+                      </div>
+                    </div>
+                    <div class="popular__item swiper-slide">
+                      <div class="cat-product">
+                        <img src="assets/img/pr-01.jpg" alt="" class="cat-product__img">
+                        <div class="cat-product__inner">
+                          <p class="cat-product__caption">Halogen absorber complete with U-tube
+                          </p>
+                          <div class="cat-product__flex">
+                            <p class="cat-product__article">Catalog number</p>
+                            <p class="cat-product__article"><span>X4021</span></p>
+                          </div>
+                          <div class="cat-product__flex">
+                            <p class="cat-product__price">9999 EUR</p>
+                            <button class="btn-reset btn btn_orange btn_add-to-cart js-add-to-cart cat-product__add-to-cart">
+                              <svg width="18" height="18">
+                                <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
+                              </svg>
+                              <span>Add to cart</span>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="" class="cat-product__link lnk"></a>
+                      </div>
+                    </div>
+                    <div class="popular__item swiper-slide">
+                      <div class="cat-product">
+                        <img src="assets/img/pr-02.jpg" alt="" class="cat-product__img">
+                        <div class="cat-product__inner">
+                          <p class="cat-product__caption">Halogen absorber complete with U-tube
+                          </p>
+                          <div class="cat-product__flex">
+                            <p class="cat-product__article">Catalog number</p>
+                            <p class="cat-product__article"><span>X4021</span></p>
+                          </div>
+                          <div class="cat-product__flex">
+                            <p class="cat-product__price">9999 EUR</p>
+                            <button class="btn-reset btn btn_orange btn_add-to-cart js-add-to-cart cat-product__add-to-cart">
+                              <svg width="18" height="18">
+                                <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
+                              </svg>
+                              <span>Add to cart</span>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="" class="cat-product__link lnk"></a>
+                      </div>
+                    </div>
+                    <div class="popular__item swiper-slide">
+                      <div class="cat-product">
+                        <img src="assets/img/pr-03.jpg" alt="" class="cat-product__img">
+                        <div class="cat-product__inner">
+                          <p class="cat-product__caption">Halogen absorber complete with U-tube
+                          </p>
+                          <div class="cat-product__flex">
+                            <p class="cat-product__article">Catalog number</p>
+                            <p class="cat-product__article"><span>X4021</span></p>
+                          </div>
+                          <div class="cat-product__flex">
+                            <p class="cat-product__price">9999 EUR</p>
+                            <button class="btn-reset btn btn_orange btn_add-to-cart js-add-to-cart cat-product__add-to-cart">
+                              <svg width="18" height="18">
+                                <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
+                              </svg>
+                              <span>Add to cart</span>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="" class="cat-product__link lnk"></a>
+                      </div>
+                    </div>
+                    <div class="popular__item swiper-slide">
+                      <div class="cat-product">
+                        <img src="assets/img/pr-04.jpg" alt="" class="cat-product__img">
+                        <div class="cat-product__inner">
+                          <p class="cat-product__caption">Halogen absorber complete with U-tube
+                          </p>
+                          <div class="cat-product__flex">
+                            <p class="cat-product__article">Catalog number</p>
+                            <p class="cat-product__article"><span>X4021</span></p>
+                          </div>
+                          <div class="cat-product__flex">
+                            <p class="cat-product__price">9999 EUR</p>
+                            <button class="btn-reset btn btn_orange btn_add-to-cart js-add-to-cart cat-product__add-to-cart">
+                              <svg width="18" height="18">
+                                <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
+                              </svg>
+                              <span>Add to cart</span>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="" class="cat-product__link lnk"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="populars__nav-btn populars__nav-btn_left swiper-button-prev-pop slider-navigation__btn slider-navigation__btn_prev">
+                  <svg width="40" height="40">
+                    <use xlink:href="assets/img/sprite.svg#slider-arrow-left"></use>
+                  </svg>
+                </div>
+                <div class="populars__nav-btn populars__nav-btn_right swiper-button-next-pop slider-navigation__btn slider-navigation__btn_next">
+                  <svg width="40" height="40">
+                    <use xlink:href="assets/img/sprite.svg#slider-arrow-right"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="manufactures">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <div class="section-number">
+                  <svg width="16" height="16">
+                    <use xlink:href="assets/img/sprite.svg#section-icon2"></use>
+                  </svg>
+                  <p class="section-number__caption section-number__caption_white">02</p>
+                  <p class="section-number__caption section-number__caption_white">—</p>
+                  <p class="section-number__caption section-number__caption_white">partners</p>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <h2 class="title-h2 title-h2_white manufactures__title">Manufactures</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="slider-navigation manufactures__navigation">
+                  <div class="swiper-button-prev-man slider-navigation__btn slider-navigation__btn_prev">
+                    <svg width="40" height="40">
+                      <use xlink:href="assets/img/sprite.svg#slider-arrow-left"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next-man slider-navigation__btn slider-navigation__btn_next">
+                    <svg width="40" height="40">
+                      <use xlink:href="assets/img/sprite.svg#slider-arrow-right"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8 manufactures__slider-wrapper">
+                <div class="swiper js-manufactures-slider">
+                  <div class="swiper-wrapper">
+                    <!--  SLIDE ONE-->
+                    <div class="swiper-slide manufactures__slide">
+                      <p class="manufactures__caption col-md-4">Company name</p>
+                      <p class="manufactures__description col-sm-8 col-md-7">Our online store offers reagents and consumables for
+                        elemental
+                        analyzers
+                        of
+                        all manufacturers. Only trusted suppliers with quality products.</p>
+                    </div>
+                    <!--  SLIDE END-->
+                    <!--  SLIDE TWO-->
+                    <div class="swiper-slide manufactures__slide">
+                      <p class="manufactures__caption col-md-4">Company name</p>
+                      <p class="manufactures__description col-sm-8 col-md-7">Our online store offers reagents and consumables for
+                        elemental
+                        analyzers
+                        of
+                        all manufacturers. Only trusted suppliers with quality products.</p>
+                    </div>
+                    <!--  SLIDE END-->
+                    <!--  SLIDE THREE-->
+                    <div class="swiper-slide manufactures__slide">
+                      <p class="manufactures__caption col-md-4">Company name</p>
+                      <p class="manufactures__description col-sm-8 col-md-7">Our online store offers reagents and consumables for
+                        elemental
+                        analyzers
+                        of
+                        all manufacturers. Only trusted suppliers with quality products.</p>
+                    </div>
+                    <!--  SLIDE END-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <ul class="manufactures__list">
+                  <li class="manufactures__item">
+                    <svg width="89" height="100">
+                      <use xlink:href="assets/img/sprite.svg#mn-01"></use>
+                    </svg>
+                  </li>
+                  <li class="manufactures__item">
+                    <svg width="78" height="100">
+                      <use xlink:href="assets/img/sprite.svg#mn-02"></use>
+                    </svg>
+                  </li>
+                  <li class="manufactures__item">
+                    <svg width="70" height="100">
+                      <use xlink:href="assets/img/sprite.svg#mn-03"></use>
+                    </svg>
+                  </li>
+                  <li class="manufactures__item">
+                    <svg width="75" height="100">
+                      <use xlink:href="assets/img/sprite.svg#mn-04"></use>
+                    </svg>
+                  </li>
+                  <li class="manufactures__item">
+                    <svg width="88" height="100">
+                      <use xlink:href="assets/img/sprite.svg#mn-05"></use>
+                    </svg>
+                  </li>
+                  <li class="manufactures__item">
+                    <svg width="97" height="100">
+                      <use xlink:href="assets/img/sprite.svg#mn-06"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="main-news">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-7">
+                <div class="section-number mb-3">
+                  <svg width="16" height="16">
+                    <use xlink:href="assets/img/sprite.svg#section-icon"></use>
+                  </svg>
+                  <p class="section-number__caption">03</p>
+                  <p class="section-number__caption">—</p>
+                  <p class="section-number__caption">news</p>
+                </div>
+                <h2 class="title-h2 populars__title">Company's news</h2>
+              </div>
+              <div class="col-md-5">
+                <a href="catalog.html" class="btn btn_orange btn_upper populars__all-btn">Watch all news</a>
+              </div>
+            </div>
+            <div class="row main-news__row">
+              <div class="col-md-6">
+                <div class="main-news__item is-active">
+                  <p class="main-news__date">05.03.2021</p>
+                  <p class="main-news__caption">Congratulations to dear women on&nbsp;March&nbsp;8!</p>
+                  <p class="main-news__description">Dear women, we congratulate you on International Women's Day! The team of
+                    JSC "Nitek Instruments" wishes you prosperity, success, professional achievements, personal victories,
+                    health and prosperity! Let light and warmth pour into your hearts every spring day! We wish you to become
+                    more successful and happier!</p>
+                  <a href="" class="btn btn_orange main-news__btn lnk">Read more</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="main-news__item">
+                  <p class="main-news__date">04.03.2021</p>
+                  <p class="main-news__caption">The Elemental Microanalysis website has&nbsp;a&nbsp;new catalog of capsules!</p>
+                  <p class="main-news__description">The catalog contains an updated and expanded range of capsules for CHNSO
+                    analysis, as well as devices and accessories for sample preparation.</p>
+                  <a href="" class="btn btn_orange main-news__btn lnk">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="main-about">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="main-about__flex">
+                  <div>
+                    <div class="section-number mb-3">
+                      <svg width="16" height="16">
+                        <use xlink:href="assets/img/sprite.svg#section-icon"></use>
+                      </svg>
+                      <p class="section-number__caption">04</p>
+                      <p class="section-number__caption">—</p>
+                      <p class="section-number__caption">about</p>
+                    </div>
+                    <h2 class="title-h2 populars__title">ABOUT ONLINE STORE</h2>
+                  </div>
+                  <div class="main-about__description">
+                    <p>Our online store contains reagents and consumables for elemental analyzers of all manufacturers: Leco,
+                      Eltra, Bruker, Elementar, Perkin Elmer, Thermo, HORIBA, Shimadzu, EuroVector, Costech, NC Technologies and
+                      many others, including reactors, columns, tin, silver, aluminum and nickel capsules, boats, ceramic
+                      crucibles, accelerators (tungsten, iron, tin, copper and others), absorbers (quartz wool, anhydrone,
+                      cellulose, copper oxide, sodium hydroxide and others), etc.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-9 col-md-4">
+                <img src="/assets/img/ab-01.png" alt="About" class="main-about__img">
+              </div>
+              <div class="col-sm-3 col-md-2">
+                <div class="main-about__flex ">
+                  <img src="/assets/img/ab-02.jpg" alt="About" class="main-about__img">
+                  <a href="about.html" class="main-about__link">CHNSO CORP</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+    </main>
+    <div class="js-stop-header"></div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row mb-5 footer__row">
+          <div class="col-sm-4 col-md-3">
+            <a href="home.html" class="logo footer__logo">
+              <svg width="160" height="30">
+                <use xlink:href="assets/img/sprite.svg#logo-footer"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <p class="footer__caption">Company</p>
+            <ul class="footer__nav footer-nav">
+              <li class="footer-nav__item"><a href="about.html" class="footer-nav__link">About</a></li>
+              <li class="footer-nav__item"><a href="" class="footer-nav__link">Manufactures</a></li>
+              <li class="footer-nav__item"><a href="catalog.html" class="footer-nav__link">Catalogue</a></li>
+              <li class="footer-nav__item"><a href="news.html" class="footer-nav__link">News</a></li>
+              <li class="footer-nav__item"><a href="contacts.html" class="footer-nav__link">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <p class="footer__caption">For users</p>
+            <ul class="footer__nav footer-nav">
+              <li class="footer-nav__item"><a href="" class="footer-nav__link">Literature Downloads</a></li>
+              <li class="footer-nav__item"><a href="" class="footer-nav__link">General Terms and Conditions</a></li>
+              <li class="footer-nav__item"><a href="" class="footer-nav__link">Privacy Notice</a></li>
+              <li class="footer-nav__item"><a href="" class="footer-nav__link">Imprint</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p class="footer__caption">Contact Us</p>
+            <a href="tel:1234567813" class="footer__phone">123 456 78 13</a>
+            <a href="mailto:info@chnso.com" class="footer__email">info@chnso.com</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="footer__copyright">&copy; Official website of the online store</p>
+          </div>
+          <div class="col-sm-6">
+            <div class="footer__develop">
+              <p>Site development</p>
+              <a href="https://akticom.ru/" class="footer__akticom" target="_blank">
+                <svg width="122" height="26">
+                  <use xlink:href="assets/img/sprite.svg#acticom-logo"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- build:js -->
+    <script src="assets/vendor/js/jquery.js"></script>
+    <script src="assets/vendor/js/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/js/swiper-bundle.js"></script>
+    <script src="assets/vendor/js/select2.min.js"></script>
+    <script src="assets/vendor/js/inputmask.min.js"></script>
+    <script src="assets/js/util/crossPlatform.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- endbuild -->
+    
+    
+</body>
+
+</html>

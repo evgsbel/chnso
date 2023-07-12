@@ -1,0 +1,297 @@
+//hero
+
+.hero {
+  margin-bottom: 80px;
+  &__inner {
+    margin: 0 auto;
+    padding: 110px 0 90px;
+    border-radius: 10px;
+    background-image: url('../img/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1400px;
+    max-width: 100%;
+  }
+  &__title {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: #fff;
+    width: 500px;
+    max-width: 100%;
+  }
+  &__subtitle {
+    line-height: 1.5;
+    color: #FAFAFA;
+    width: 390px;
+    max-width: 100%;
+  }
+  &__navigation {
+    margin-top: 20px;
+    justify-content: flex-end;
+  }
+}
+
+
+// populars
+
+.populars {
+  margin-bottom: 120px;
+  &__all-btn {
+    margin-left: auto;
+    padding: 0 24px;
+  }
+  &__nav-btn {
+    position: absolute;
+    top: 35%;
+    z-index: 20;
+    &_left {
+      left: -5px;
+      @include r(1024) {
+        left: 0;
+      }
+    }
+    &_right {
+      right: -5px;
+      @include r(1024) {
+        right: 0;
+      }
+    }
+  }
+}
+
+.cat-product {
+  position: relative;
+  padding-bottom: 13px;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: border-color $trns;
+  &:hover {
+    border-color: #314BA9;
+  }
+  &__inner {
+    padding: 0 13px;
+  }
+  &__img {
+    display: block;
+    margin: 0 auto 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  &__caption {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    min-height: 70px;
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__article {
+    font-size: 13px;
+    margin-bottom: 20px;
+    span {
+      text-transform: uppercase;
+    }
+  }
+  &__price {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &__add-to-cart {
+    position: relative;
+    z-index: 50;
+  }
+}
+
+//manufactures
+
+.manufactures {
+  margin-bottom: 120px;
+  padding: 80px 0 60px;
+  background-color: $blue;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__caption {
+    flex: 0 0 auto;
+    margin-top: 62px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 0;
+    @include r(768) {
+      margin: 30px 0;
+    }
+  }
+  &__description {
+    margin-top: 62px;
+    margin-bottom: 40px;
+    color: #fff;
+    line-height: 1.5;
+    @include r(768) {
+      margin: 0 0 30px;
+      padding: 0;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    border-top: 1px solid #fff;
+    @include r(768) {
+      flex-wrap: wrap;
+      gap: 20px 0;
+    }
+  }
+  &__item {
+    @include r(768) {
+      flex: 0 0 33.3%;
+      text-align: center;
+    }
+  }
+  &__navigation {
+    margin-top: 75px;
+  }
+  &__slide {
+    display: flex;
+    @include r(768) {
+      flex-direction: column;
+    }
+  }
+}
+
+//main-news
+
+.main-news {
+  margin-bottom: 120px;
+  &__item {
+    position: relative;
+    padding: 30px 30px 70px 30px;
+    background-color: #fff;
+    color: $black;
+    height: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.2' d='M100 100C86.8678 100 73.8642 97.4134 61.7317 92.388C49.5991 87.3625 38.5752 79.9965 29.2893 70.7107C20.0035 61.4248 12.6375 50.4009 7.61204 38.2683C2.58657 26.1358 -1.14805e-06 13.1322 0 0H30.6242C30.6242 9.11056 32.4187 18.1319 35.9051 26.549C39.3916 34.966 44.5018 42.614 50.9439 49.0561C57.386 55.4982 65.034 60.6084 73.451 64.0949C81.8681 67.5813 90.8894 69.3758 100 69.3758L100 100Z' fill='%2315C6E1'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: top right;
+    cursor: pointer;
+    transition: all $trns;
+    @include r(768) {
+      padding-bottom: 30px;
+    }
+    &.is-active,
+    &:hover {
+      background-color: $blue;
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M100 100C86.8678 100 73.8642 97.4134 61.7317 92.388C49.5991 87.3625 38.5752 79.9965 29.2893 70.7107C20.0035 61.4248 12.6375 50.4009 7.61204 38.2683C2.58657 26.1358 -1.14805e-06 13.1322 0 0H30.6242C30.6242 9.11056 32.4187 18.1319 35.9051 26.549C39.3916 34.966 44.5018 42.614 50.9439 49.0561C57.386 55.4982 65.034 60.6084 73.451 64.0949C81.8681 67.5813 90.8894 69.3758 100 69.3758L100 100Z' fill='%23D0F4F9'/%3E%3C/svg%3E%0A");
+      color: #fff;
+    }
+  }
+  &__row {
+    @include r(768) {
+      gap: 30px 0;
+    }
+  }
+  &__date {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  &__caption {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  &__description {
+    font-size: 14px;
+    margin-bottom: 15px;
+    @include r(768) {
+      margin-bottom: 20px;
+    }
+  }
+  &__btn {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    @include r(768) {
+      position: relative;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+}
+
+
+// main-about
+
+.main-about {
+  margin-bottom: 120px;
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    @include r(576) {
+      display: block;
+    }
+  }
+  &__img {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    @include r(576) {
+      display: block;
+      margin: 20px auto;
+    }
+  }
+  &__link {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    padding-bottom: 2px;
+    font-size: 14px;
+    color: $blue;
+    text-transform: uppercase;
+    width: max-content;
+    max-width: 100%;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 1px;
+      background-color: $blue;
+      transition: width $trns;
+    }
+    &:hover::before {
+      width: 70%;
+    }
+    @include r(576) {
+      margin: 20px auto 0;
+    }
+  }
+  &__description {
+    @include r(768) {
+      margin: 40px 0;
+    }
+  }
+}

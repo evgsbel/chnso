@@ -1,0 +1,92 @@
+<header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-3 col-md-2">
+          <a href="home.html" class="logo">
+            <svg width="160" height="30">
+              <use xlink:href="assets/img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="col-1 col-md-6 col-lg-7 order-4 order-md-0 position-static">
+          <button class="burger header__burger btn-reset d-flex d-lg-none js-open-mobile-menu">
+            <span></span><span></span><span></span>
+          </button>
+          <nav class="nav header__nav js-mobile-menu">
+            <button class="nav__close d-flex d-lg-none btn-reset top-nav__close p-0 js-close-mobile-menu">
+              <svg width="22" height="21">
+                <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="nav__list">
+              <li class="nav__item is-active"><a href="about.html" class="nav__link">About</a></li>
+              <li class="nav__item"><a href="news.html" class="nav__link">News</a></li>
+              <li class="nav__item"><a href="contacts.html" class="nav__link">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-8 col-md-4 col-lg-3">
+          <div class="header__right">
+<!--            <div class="change-lang header__lang">EN</div>-->
+            <select class="change-lang js-select-lang header__lang" name="lang">
+              <option value="EN" selected="selected">EN</option>
+              <option value="RU">RU</option>
+              <option value="DE">DE</option>
+              <option value="ES">ES</option>
+            </select>
+            <button class="btn-reset header__callback">
+              <svg width="20" height="16">
+                <use xlink:href="assets/img/sprite.svg#icon-mail"></use>
+              </svg>
+            </button>
+            <button class="btn-reset btn btn_blue header__login">
+                <svg width="24" height="24">
+                  <use xlink:href="assets/img/sprite.svg#icon-login"></use>
+                </svg>
+                <span>Sign in</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-2">
+          <a href="catalog.html" class="btn btn_orange btn_upper header__catalog-btn">Catalog</a>
+        </div>
+        <div class="col-sm-7 col-lg-8">
+          <form class="search header__search">
+            <input placeholder="Enter the name of the goods" autocomplete="off" class="search__input"
+                   type="search" name="search" id="search">
+            <button class="search__submit btn-reset">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="col-sm-3 col-lg-2">
+          <div class="mini-cart header__cart">
+            <div class="mini-cart__icon">
+              <svg width="20" height="20">
+                <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
+              </svg>
+              <div class="mini-cart__count">23</div>
+            </div>
+            <div class="mini-cart__info">
+              <p class="mini-cart__products">14 products</p>
+              <p class="mini-cart__sum">534 EUR</p>
+            </div>
+            <svg class="mini-cart__arrow" width="16" height="8">
+              <use xlink:href="assets/img/sprite.svg#arrow1"></use>
+            </svg>
+            <a href="cart.html" class="mini-cart__link"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,139 @@
+---
+layout: default
+title: Order Page
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Main page</a></li>
+        <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link_active">Order</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<section class="order">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-6">
+        <h1 class="title-h2 mb-4">Order</h1>
+      </div>
+      <div class="col-lg-3 col-6">
+        <a href="cart.html" class="order__back-link mb-4">
+          <div class="order__back-icon">
+            <svg width="4" height="6">
+              <use xlink:href="assets/img/sprite.svg#icon-back"></use>
+            </svg>
+          </div>
+          <span>Back</span>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-9">
+        <form action="" class="order__form form" name="order">
+          <div class="form__group order__group">
+            <label for="order-name" class="form__label col-md-4">
+              Full name
+              <input
+                type="text"
+                class="form__input"
+                name="order-name"
+                id="order-name"
+                placeholder="Full name">
+            </label>
+            <label for="order-phone" class="form__label col-md-4">
+              Phone
+              <input
+                type="tel"
+                class="form__input"
+                name="order-phone"
+                id="order-phone"
+                placeholder="1 2321 2313131">
+            </label>
+            <label for="order-email" class="form__label col-md-4">
+              E-mail
+              <input
+                type="email"
+                class="form__input"
+                name="order-email"
+                id="order-email"
+                placeholder="fullname@mail.com">
+            </label>
+          </div>
+          <div class="form__group order__group">
+            <label for="order-company" class="form__label col-md-6">
+              Company name (for legal entities)
+              <input
+                type="text"
+                class="form__input"
+                name="order-company"
+                id="order-company"
+                placeholder="Company name">
+            </label>
+            <label for="order-tim" class="form__label col-md-6">
+              TIN (for legal entities)
+              <input
+                type="text"
+                class="form__input"
+                name="order-tim"
+                id="order-tim"
+                placeholder="Full name">
+            </label>
+          </div>
+          <div class="form__group order__group">
+            <label for="order-address" class="form__label col-md-6">
+              Delivery address (additional charge)
+              <input
+                type="text"
+                class="form__input"
+                name="order-address"
+                id="order-address"
+                placeholder="st Erstree 343 ">
+            </label>
+            <label for="order-comment" class="form__label col-md-6">
+              Comment
+              <input
+                type="text"
+                class="form__input"
+                name="order-comment"
+                id="order-comment"
+                placeholder="Write your comment">
+            </label>
+          </div>
+          <div class="form__group col-md-4">
+            <label class="input-file">
+              <input type="file" name="file">
+              <span class="input-file-btn">Attach Document</span>
+              <span class="input-file-text"></span>
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-3">
+        <div class="cart__total cart-total">
+          <p class="cart-total__caption">Total order amount</p>
+          <div class="cart-total__item">
+            <p>Price</p>
+            <p>9999 EUR</p>
+          </div>
+          <div class="cart-total__item">
+            <p>Additional fee (taxes)</p>
+            <p>99 EUR</p>
+          </div>
+          <hr class="cart-total__line">
+          <div class="cart-total__item">
+            <p>Total</p>
+            <p>9999 EUR</p>
+          </div>
+          <!--          <input type="submit" form="order" value="Checkout" class="btn-reset btn btn_orange cart-total__btn">-->
+          <button class="btn-reset btn btn_orange cart-total__btn">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+

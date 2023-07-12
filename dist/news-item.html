@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>News Item Page</title>
+    <!-- build:css -->
+    <link rel="stylesheet" href="assets/vendor/css/animate.css">
+    <link rel="stylesheet" href="assets/vendor/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/vendor/css/select2.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<!-- endbuild -->
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body class="is-news-item-page">
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-3 col-md-2">
+              <a href="home.html" class="logo">
+                <svg width="160" height="30">
+                  <use xlink:href="assets/img/sprite.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="col-1 col-md-6 col-lg-7 order-4 order-md-0 position-static">
+              <button class="burger header__burger btn-reset d-flex d-lg-none js-open-mobile-menu">
+                <span></span><span></span><span></span>
+              </button>
+              <nav class="nav header__nav js-mobile-menu">
+                <button class="nav__close d-flex d-lg-none btn-reset top-nav__close p-0 js-close-mobile-menu">
+                  <svg width="22" height="21">
+                    <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                  </svg>
+                </button>
+                <ul class="nav__list">
+                  <li class="nav__item is-active"><a href="about.html" class="nav__link">About</a></li>
+                  <li class="nav__item"><a href="news.html" class="nav__link">News</a></li>
+                  <li class="nav__item"><a href="contacts.html" class="nav__link">Contacts</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-8 col-md-4 col-lg-3">
+              <div class="header__right">
+    <!--            <div class="change-lang header__lang">EN</div>-->
+                <select class="change-lang js-select-lang header__lang" name="lang">
+                  <option value="EN" selected="selected">EN</option>
+                  <option value="RU">RU</option>
+                  <option value="DE">DE</option>
+                  <option value="ES">ES</option>
+                </select>
+                <button class="btn-reset header__callback">
+                  <svg width="20" height="16">
+                    <use xlink:href="assets/img/sprite.svg#icon-mail"></use>
+                  </svg>
+                </button>
+                <button class="btn-reset btn btn_blue header__login">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-login"></use>
+                    </svg>
+                    <span>Sign in</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-2">
+              <a href="catalog.html" class="btn btn_orange btn_upper header__catalog-btn">Catalog</a>
+            </div>
+            <div class="col-sm-7 col-lg-8">
+              <form class="search header__search">
+                <input placeholder="Enter the name of the goods" autocomplete="off" class="search__input"
+                       type="search" name="search" id="search">
+                <button class="search__submit btn-reset">
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="col-sm-3 col-lg-2">
+              <div class="mini-cart header__cart">
+                <div class="mini-cart__icon">
+                  <svg width="20" height="20">
+                    <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
+                  </svg>
+                  <div class="mini-cart__count">23</div>
+                </div>
+                <div class="mini-cart__info">
+                  <p class="mini-cart__products">14 products</p>
+                  <p class="mini-cart__sum">534 EUR</p>
+                </div>
+                <svg class="mini-cart__arrow" width="16" height="8">
+                  <use xlink:href="assets/img/sprite.svg#arrow1"></use>
+                </svg>
+                <a href="cart.html" class="mini-cart__link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main role="main" class="main">
+        
+    </main>
+    <div class="js-stop-header"></div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row mb-5 footer__row">
+          <div class="col-sm-4 col-md-3">
+            <a href="home.html" class="logo footer__logo">
+              <svg width="160" height="30">
+                <use xlink:href="assets/img/sprite.svg#logo-footer"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <p class="footer__caption">Company</p>
+            <ul class="footer__nav footer-nav">
+              <li class="footer-nav__item"><a href="about.html" class="footer-nav__link">About</a></li>
+              <li class="footer-nav__item"><a href="" class="footer-nav__link">Manufactures</a></li>
+              <li class="footer-nav__item"><a href="catalog.html" class="footer-nav__link">Catalogue</a></li>
+              <li class="footer-nav__item"><a href="news.html" class="footer-nav__link">News</a></li>
+              <li class="footer-nav__item"><a href="contacts.html" class="footer-nav__link">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <p class="footer__caption">For users</p>
+            <ul class="footer__nav footer-nav">
+              <li class="footer-nav__item"><a href="" class="footer-nav__link">Literature Downloads</a></li>
+              <li class="footer-nav__item"><a href="" class="footer-nav__link">General Terms and Conditions</a></li>
+              <li class="footer-nav__item"><a href="" class="footer-nav__link">Privacy Notice</a></li>
+              <li class="footer-nav__item"><a href="" class="footer-nav__link">Imprint</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p class="footer__caption">Contact Us</p>
+            <a href="tel:1234567813" class="footer__phone">123 456 78 13</a>
+            <a href="mailto:info@chnso.com" class="footer__email">info@chnso.com</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="footer__copyright">&copy; Official website of the online store</p>
+          </div>
+          <div class="col-sm-6">
+            <div class="footer__develop">
+              <p>Site development</p>
+              <a href="https://akticom.ru/" class="footer__akticom" target="_blank">
+                <svg width="122" height="26">
+                  <use xlink:href="assets/img/sprite.svg#acticom-logo"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- build:js -->
+    <script src="assets/vendor/js/jquery.js"></script>
+    <script src="assets/vendor/js/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/js/swiper-bundle.js"></script>
+    <script src="assets/vendor/js/select2.min.js"></script>
+    <script src="assets/vendor/js/inputmask.min.js"></script>
+    <script src="assets/js/util/crossPlatform.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- endbuild -->
+    
+    
+</body>
+
+</html>

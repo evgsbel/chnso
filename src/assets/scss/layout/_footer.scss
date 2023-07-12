@@ -1,0 +1,79 @@
+.footer {
+  padding: 40px 0;
+  background-color: $blue;
+  color: #fff;
+  &__caption {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+  }
+  &__phone {
+    display: flex;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    width: max-content;
+    max-width: 100%;
+  }
+  &__email {
+    display: block;
+    font-weight: 600;
+    width: max-content;
+    max-width: 100%;
+  }
+  &__copyright {
+    font-weight: 500;
+    font-size: 14px;
+    @include r(576) {
+      text-align: center;
+    }
+  }
+  &__develop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0 30px;
+    font-weight: 500;
+    font-size: 14px;
+    @include r(576) {
+      margin-top: 20px;
+      justify-content: center;
+    }
+  }
+  a:not(.footer__akticom, .footer__logo) {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      background-color: $orange;
+      width: 0;
+      height: 2px;
+      transition: width $trns;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+  }
+
+  &__row {
+    @include r(576) {
+      gap: 30px 0;
+    }
+  }
+}
+
+.footer-nav {
+  &__item {
+    margin-bottom: 15px;
+    color: #fff;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__link {
+    font-weight: 500;
+  }
+}
