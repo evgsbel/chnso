@@ -1,0 +1,93 @@
+.about {
+  margin-bottom: 120px;
+  p {
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+  &__btn {
+    padding: 0 24px;
+    text-transform: uppercase;
+  }
+  &__img {
+    @include r(768) {
+      display: block;
+      margin: 0 auto 30px;
+    }
+  }
+}
+
+.news {
+  &__row {
+    gap: 30px 0;
+  }
+}
+
+.news-item {
+  margin-bottom: 100px;
+  &__banner {
+    margin-bottom: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+  p {
+    margin-bottom: 30px;
+    font-size: 14px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.contacts {
+  margin-bottom: 120px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px 40px;
+    margin-bottom: 80px;
+    @include r(768) {
+      margin-bottom: 40px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+    font-weight: 700;
+    line-height: 1.4;
+    a {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        background-color: $orange;
+        width: 0;
+        height: 2px;
+        transition: width $trns;
+      }
+      &:hover::before {
+        width: 100%;
+      }
+    }
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid $orange;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  &__rights {
+    font-size: 14px;
+    @include r(768) {
+      margin-top: 30px;
+    }
+  }
+}

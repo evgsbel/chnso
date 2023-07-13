@@ -96,6 +96,13 @@ img {
     background-color: transparent;
     color: $orange;
     border: 1px solid $orange;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    &:hover {
+      background-color: $orange;
+      color: #fff;
+    }
   }
   &_upper {
     text-transform: uppercase;

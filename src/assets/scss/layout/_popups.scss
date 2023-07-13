@@ -1,0 +1,79 @@
+.modal {
+  background: rgba(0, 0, 0, 0.7);
+  &__caption {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+  &__form {
+    margin: 0 auto;
+    padding: 30px 40px;
+    width: 480px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &__btn {
+    margin-bottom: 10px;
+    &:hover {
+      background-color: $violet;
+      color: #fff;
+      border-color: $violet;
+    }
+  }
+  &__link {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: max-content;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 15px;
+    color: $orange;
+    font-weight: 700;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      background-color: $orange;
+      width: 0;
+      height: 2px;
+      transition: width $trns;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+  }
+  &__close {
+    color: $orange;
+    opacity: 1 !important;
+    &:hover {
+      color: $violet;
+    }
+    span {
+      font-size: 2rem;
+    }
+  }
+  &__subcaption {
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+  }
+  .modal-dialog {
+    max-width: 480px;
+  }
+  &__label {
+    margin-bottom: 30px;
+    p {
+      margin-bottom: 3px;
+    }
+  }
+}

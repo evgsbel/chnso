@@ -11734,6 +11734,11 @@ img {
   background-color: transparent;
   color: #FF5E3B;
   border: 1px solid #FF5E3B;
+  border-radius: 10px;
+}
+.btn_trnsp:hover {
+  background-color: #FF5E3B;
+  color: #fff;
 }
 .btn_upper {
   text-transform: uppercase;
@@ -12367,6 +12372,95 @@ ul {
   font-weight: 500;
 }
 
+.modal {
+  background: rgba(0, 0, 0, 0.7);
+}
+.modal__caption {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.modal__form {
+  margin: 0 auto;
+  padding: 30px 40px;
+  width: 480px;
+  max-width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.modal__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+.modal__btn {
+  margin-bottom: 10px;
+}
+.modal__btn:hover {
+  background-color: #4F25C9;
+  color: #fff;
+  border-color: #4F25C9;
+}
+.modal__link {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 15px;
+  color: #FF5E3B;
+  font-weight: 700;
+}
+.modal__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background-color: #FF5E3B;
+  width: 0;
+  height: 2px;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+.modal__link:hover::before {
+  width: 100%;
+}
+.modal__close {
+  color: #FF5E3B;
+  opacity: 1 !important;
+}
+.modal__close:hover {
+  color: #4F25C9;
+}
+.modal__close span {
+  font-size: 2rem;
+}
+.modal__subcaption {
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+.modal .modal-dialog {
+  max-width: 480px;
+}
+.modal__label {
+  margin-bottom: 30px;
+}
+.modal__label p {
+  margin-bottom: 3px;
+}
+
 .form__group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12959,6 +13053,112 @@ ul {
 @media only screen and (max-width: 768px) {
   .main-about__description {
     margin: 40px 0;
+  }
+}
+
+.about {
+  margin-bottom: 120px;
+}
+.about p {
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+.about__btn {
+  padding: 0 24px;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+  .about__img {
+    display: block;
+    margin: 0 auto 30px;
+  }
+}
+
+.news__row {
+  gap: 30px 0;
+}
+
+.news-item {
+  margin-bottom: 100px;
+}
+.news-item__banner {
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.news-item p {
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+.news-item p:last-child {
+  margin-bottom: 0;
+}
+
+.contacts {
+  margin-bottom: 120px;
+}
+.contacts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 22px 40px;
+  margin-bottom: 80px;
+}
+@media only screen and (max-width: 768px) {
+  .contacts__list {
+    margin-bottom: 40px;
+  }
+}
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 15px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.contacts__item a {
+  position: relative;
+}
+.contacts__item a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background-color: #FF5E3B;
+  width: 0;
+  height: 2px;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+.contacts__item a:hover::before {
+  width: 100%;
+}
+.contacts__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #FF5E3B;
+  border-radius: 5px;
+}
+.contacts__rights {
+  font-size: 14px;
+}
+@media only screen and (max-width: 768px) {
+  .contacts__rights {
+    margin-top: 30px;
   }
 }
 

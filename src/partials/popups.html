@@ -1,0 +1,161 @@
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal__form modal-content">
+      <form action="" class="form">
+        <div class="modal__heading">
+          <p class="modal__caption">Sign In</p>
+          <button type="button" class="close modal__close btn-reset" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <label for="login-email" class="form__label w-100 modal__label">
+          <p>E-mail</p>
+          <input
+            class="form__input"
+            id="login-email"
+            name="login-email"
+            type="email"
+            placeholder="user@chnso.com"
+          >
+        </label>
+        <label for="login-pass" class="form__label modal__label w-100">
+          <p>Password</p>
+          <input
+            class="form__input"
+            id="login-pass"
+            name="login-pass"
+            type="password"
+            placeholder="******"
+          >
+        </label>
+        <button class="btn-reset btn btn_orange form__btn modal__btn w-100">Sign in</button>
+        <button type="button" class="btn-reset btn btn_trnsp form__btn modal__btn form__btn_transparent js-close-login w-100" data-toggle="modal" data-target="#register" data-dismiss="modal">Sign up</button>
+        <button type="button" class="modal__link btn-reset"  data-toggle="modal" data-target="#confirm" data-dismiss="modal">Restore password</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal__form modal-content">
+      <form action="" class="form">
+        <div class="modal__heading">
+          <p class="modal__caption">SIGN UP</p>
+          <button type="button" class="close modal__close btn-reset" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <label for="register-name" class="form__label modal__label w-100">
+          <p>Name</p>
+          <input
+            class="form__input"
+            id="register-name"
+            name="register-name"
+            type="text"
+            placeholder="user@chnso.com"
+          >
+        </label>
+        <label for="register-email" class="form__label modal__label w-100">
+          <p>E-mail</p>
+          <input
+            class="form__input"
+            id="register-email"
+            name="register-email"
+            type="email"
+            placeholder="user@chnso.com"
+          >
+        </label>
+        <label for="register-pass" class="form__label modal__label w-100">
+          <p>Password</p>
+          <input
+            class="form__input"
+            id="register-pass"
+            name="register-pass"
+            type="password"
+            placeholder="******"
+          >
+        </label>
+        <label for="repeat-pass" class="form__label modal__label w-100">
+          <p>Repeat password</p>
+          <input
+            class="form__input"
+            id="repeat-pass"
+            name="repeat-pass"
+            type="password"
+            placeholder="******"
+          >
+        </label>
+        <button class="btn-reset btn btn_orange form__btn modal__btn w-100">Sign up</button>
+        <button class="btn-reset btn btn_trnsp form__btn modal__btn form__btn_transparent w-100" data-toggle="modal" data-dismiss="modal" data-target="#login">Have an account? Sign in</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal__form modal-content">
+      <form action="" class="form">
+        <div class="modal__heading">
+          <p class="modal__caption">Restore password</p>
+          <button type="button" class="close modal__close btn-reset" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <p class="modal__subcaption">Enter your e-mail. We will send you a link to change your password. </p>
+        <label for="confirm-code" class="form__label modal__label w-100">
+          <p>E-mail</p>
+          <input
+            class="form__input"
+            id="confirm-code"
+            name="confirm-code"
+            type="text"
+            placeholder="user@chnso.com"
+          >
+        </label>
+        <button type="button" class="btn-reset btn btn_orange form__btn modal__btn w-100">Send</button>
+        <button type="button" class="modal__link btn-reset"  data-toggle="modal" data-dismiss="modal" data-target="#login">Back</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal__form modal-content">
+      <form action="" class="form">
+        <div class="modal__heading">
+          <p class="modal__caption">leave your contact details</p>
+          <button type="button" class="close modal__close btn-reset" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <label for="callback-name" class="form__label modal__label w-100">
+          <p>Full name</p>
+          <input
+            class="form__input"
+            id="callback-name"
+            name="callback-name"
+            type="text"
+            placeholder="Full name"
+          >
+        </label>
+        <label for="callback-phone" class="form__label w-100 modal__label">
+          <p>Phone</p>
+          <input
+            class="form__input"
+            id="callback-phone"
+            name="callback-email"
+            type="tel"
+            placeholder="1 2321 433434"
+          >
+        </label>
+        <h4>I agree to the processing of personal data</h4>
+        <button class="btn-reset btn btn_orange form__btn modal__btn w-100">Chekout</button>
+      </form>
+    </div>
+  </div>
+</div>
+

@@ -1,4 +1,7 @@
-<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_203_474)"><path d="M4 21.333A2.666 2.666 0 006.667 24h10.667A2.666 2.666 0 0020 21.333v-16H4v16zm12.667-20L15.334 0H8.667L7.334 1.333H2.667V4h18.667V1.333h-4.667z"/></g><defs><clipPath id="clip0_203_474"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></svg>331H2.66699V4H21.3336V1.33331H16.667Z" />
+<svg width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+<g id="svg-gobbler (64) 1" clip-path="url(#clip0_203_474)">
+<g id="Group">
+<path id="Vector" d="M4.0003 21.3333C4.0003 22.8067 5.19362 24 6.66699 24H17.3337C18.807 24 20.0003 22.8067 20.0003 21.3333V5.33331H4.0003V21.3333ZM16.667 1.33331L15.3336 0H8.66699L7.33362 1.33331H2.66699V4H21.3336V1.33331H16.667Z" />
 </g>
 </g>
 <defs>
