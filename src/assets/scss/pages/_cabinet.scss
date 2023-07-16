@@ -1,0 +1,247 @@
+.cabinet {
+  margin-bottom: 120px;
+  &__caption {
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  &__submit {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+  &__logout {
+    display: flex;
+    align-items: center;
+    gap: 0 3px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ff5e3b;
+    transition: color $trns;
+    svg {
+      fill: #ff5e3b;
+      transition: fill $trns;
+    }
+    &:hover {
+      color: $blue;
+      svg {
+        fill: $blue;
+      }
+    }
+  }
+  &__content {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    @include r(1024) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  &__user-data {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &__nav {
+    @include r(1024) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.cabinet-nav {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  &__list {
+    margin-bottom: 60px;
+  }
+  &__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    padding: 0 15px;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #bcbcc4;
+    transition: background-color $trns, color $trns, border-color $trns, border-radius $trns;
+
+    &:first-child {
+      border-top: 1px solid #bcbcc4;
+
+    }
+    svg {
+      fill: $blue;
+      transition: fill $trns;
+    }
+    &.is-active,
+    &:hover {
+      background-color: $orange;
+      border-color: $orange;
+
+      color: #fff;
+      &::before {
+        opacity: 1;
+      }
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+.cabinet-orders {
+  &__item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #F4F6F6;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__flex {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    @include r(768) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px 0;
+    }
+  }
+  &__line {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include r(576) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  }
+  &__bottom-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    &_grey {
+      color: #909090;
+    }
+    b {
+      font-weight: 700;
+    }
+  }
+  &__status {
+    display: flex;
+    align-items: center;
+    gap: 0 4px;
+    font-weight: 500;
+    font-size: 10px;
+  }
+  &__total {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include r(768) {
+      margin-left: auto;
+    }
+    @include r(576) {
+      margin-left: 0;
+    }
+  }
+  &__more-btn {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    font-weight: 700;
+    font-size: 13px;
+    height: 24px;
+    width: 71px;
+    background-color: $orange;
+    border-radius: 100px;
+    svg {
+      transform: rotate(180deg);
+      transition: transform $trns;
+    }
+    &.collapsed svg{
+      transform: rotate(0);
+    }
+  }
+  &__content {
+    border-top: 1px solid #2c2d7b;
+  }
+  &__captions {
+    position: relative;
+    display: grid;
+    grid-template-columns: 5fr 1fr 2fr;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      &:first-child {
+        text-align: left;
+      }
+      @include r(576) {
+        display: none;
+      }
+    }
+    @include r(576) {
+      margin-bottom: 10px;
+    }
+  }
+  &__list {
+    position: relative;
+    display: grid;
+    grid-template-columns: 5fr 1fr 2fr;
+    align-items: center;
+    margin-bottom: 10px;
+    @include r(576) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #2C2D7B;
+      gap: 10px 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+
+  }
+  &__img {
+    width: 70px;
+    height: 45px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+  &__count {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .cart__caption {
+    @include r(768) {
+      text-align: left;
+    }
+  }
+  .cabinet-orders__total {
+    @include r(768) {
+      margin: 0;
+    }
+  }
+}

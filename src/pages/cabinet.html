@@ -2,3 +2,671 @@
 layout: default
 title: Cabinet Page
 ---
+
+<section class="cabinet">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="cabinet-nav cabinet__nav">
+          <div class="cabinet-nav__list tabs">
+            <button class="cabinet-nav__btn btn-reset tabs__btn is-active" data-path="data">
+              <svg width="18" height="18">
+                <use xlink:href="assets/img/sprite.svg#cb-01"></use>
+              </svg>
+              <span>User data</span>
+            </button>
+            <button class="cabinet-nav__btn btn-reset tabs__btn" data-path="orders">
+              <svg width="18" height="18">
+                <use xlink:href="assets/img/sprite.svg#cb-02"></use>
+              </svg>
+              <span>Current orders</span>
+            </button>
+            <button class="cabinet-nav__btn btn-reset tabs__btn" data-path="history">
+              <svg width="18" height="18">
+                <use xlink:href="assets/img/sprite.svg#cb-03"></use>
+              </svg>
+              <span>History of orders</span>
+            </button>
+          </div>
+          <button class="btn-reset cabinet__logout">
+            <svg width="26" height="26">
+              <use xlink:href="assets/img/sprite.svg#icon-logout"></use>
+            </svg>
+            <span>Sign out</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="tabs__content cabinet__content cabinet__user-data is-active" data-target="data">
+          <div class="col-12"><p class="cabinet__caption">User data</p></div>
+          <form action="" class="form" name="order">
+            <div class="form__group order__group">
+              <label for="order-name" class="form__label col-md-4">
+                Full name
+                <input
+                  type="text"
+                  class="form__input"
+                  name="order-name"
+                  id="order-name"
+                  placeholder="Full name">
+              </label>
+              <label for="order-phone" class="form__label col-md-4">
+                Phone
+                <input
+                  type="tel"
+                  class="form__input"
+                  name="order-phone"
+                  id="order-phone"
+                  placeholder="1 2321 2313131">
+              </label>
+              <label for="order-email" class="form__label col-md-4">
+                E-mail
+                <input
+                  type="email"
+                  class="form__input"
+                  name="order-email"
+                  id="order-email"
+                  placeholder="fullname@mail.com">
+              </label>
+            </div>
+            <div class="form__group order__group">
+              <label for="order-company" class="form__label col-md-6">
+                Company name (for legal entities)
+                <input
+                  type="text"
+                  class="form__input"
+                  name="order-company"
+                  id="order-company"
+                  placeholder="Company name">
+              </label>
+              <label for="order-tim" class="form__label col-md-6">
+                TIN (for legal entities)
+                <input
+                  type="text"
+                  class="form__input"
+                  name="order-tim"
+                  id="order-tim"
+                  placeholder="Full name">
+              </label>
+            </div>
+            <div class="form__group order__group">
+              <label for="order-address" class="form__label col-md-6">
+                Delivery address (additional charge)
+                <input
+                  type="text"
+                  class="form__input"
+                  name="order-address"
+                  id="order-address"
+                  placeholder="st Erstree 343 ">
+              </label>
+              <label for="order-comment" class="form__label col-md-6">
+                Comment
+                <input
+                  type="text"
+                  class="form__input"
+                  name="order-comment"
+                  id="order-comment"
+                  placeholder="Write your comment">
+              </label>
+            </div>
+            <div class="col-12">
+              <button class="btn-reset cabinet__submit btn btn_orange" type="submit">Save</button>
+            </div>
+          </form>
+        </div>
+        <div class="tabs__content cabinet__content cabinet-orders cabinet__orders" data-target="orders">
+          <div class="col-12">
+            <p class="cabinet__caption">Current orders</p>
+          </div>
+          <!--Item-->
+          <div class="cabinet-orders__item">
+            <div class="cabinet-orders__heading">
+              <div class="cabinet-orders__line">
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">№123213213</p>
+                  <p class="cabinet-orders__text cabinet-orders__text_grey">21.01.23/14:55</p>
+                </div>
+                <div class="cabinet-orders__flex">
+                  <div class="cabinet-orders__status">
+                    <svg width="18" height="18">
+                      <use xlink:href="assets/img/sprite.svg#cabinet-order-status-icon"></use>
+                    </svg>
+                    <span>Order is accepted</span>
+                  </div>
+                  <p class="cabinet-orders__total">9999 EUR</p>
+                </div>
+              </div>
+              <div class="cabinet-orders__line">
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">Adress</p>
+                  <p class="cabinet-orders__text"><b>Am Postbahnhof 4, 10243 Berlin</b></p>
+                </div>
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">Name</p>
+                  <p class="cabinet-orders__text"><b>Name Surname</b></p>
+                </div>
+                <button class="btn-reset cabinet-orders__more-btn collapsed" data-toggle="collapse"
+                        data-target="#orderNum1">
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprite.svg#arrow-more-icon"></use>
+                  </svg>
+                  <span class="">More</span>
+                </button>
+              </div>
+            </div>
+            <div id="orderNum1" class="collapse cabinet-orders__content" aria-labelledby="orderNum1">
+              <div class="cabinet-orders__captions">
+                <p>Order list</p>
+                <p>Amount</p>
+                <p>Price</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-01.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">1</p>
+                <p class="cat-product__price cabinet-orders__total text-center">8900 EUR</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-02.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">50</p>
+                <p class="cat-product__price cabinet-orders__total text-center">1000 EUR</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-03.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">200</p>
+                <p class="cat-product__price cabinet-orders__total text-center">250 EUR</p>
+              </div>
+            </div>
+          </div>
+          <!--Item (show)-->
+          <div class="cabinet-orders__item">
+            <div class="cabinet-orders__heading">
+              <div class="cabinet-orders__line">
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">№123213213</p>
+                  <p class="cabinet-orders__text cabinet-orders__text_grey">21.01.23/14:55</p>
+                </div>
+                <div class="cabinet-orders__flex">
+                  <div class="cabinet-orders__status">
+                    <svg width="18" height="18">
+                      <use xlink:href="assets/img/sprite.svg#cabinet-order-status-icon"></use>
+                    </svg>
+                    <span>Handed over for delivery</span>
+                  </div>
+                  <p class="cabinet-orders__total">9999 EUR</p>
+                </div>
+              </div>
+              <div class="cabinet-orders__line">
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">Adress</p>
+                  <p class="cabinet-orders__text"><b>Am Postbahnhof 4, 10243 Berlin</b></p>
+                </div>
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">Name</p>
+                  <p class="cabinet-orders__text"><b>Name Surname</b></p>
+                </div>
+                <button class="btn-reset cabinet-orders__more-btn" data-toggle="collapse" data-target="#orderNum2">
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprite.svg#arrow-more-icon"></use>
+                  </svg>
+                  <span class="">More</span>
+                </button>
+              </div>
+            </div>
+            <div id="orderNum2" class="collapse cabinet-orders__content show" aria-labelledby="orderNum2">
+              <div class="cabinet-orders__captions">
+                <p>Order list</p>
+                <p>Amount</p>
+                <p>Price</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-01.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">1</p>
+                <p class="cat-product__price cabinet-orders__total text-center">8900 EUR</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-02.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">50</p>
+                <p class="cat-product__price cabinet-orders__total text-center">1000 EUR</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-03.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">200</p>
+                <p class="cat-product__price cabinet-orders__total text-center">250 EUR</p>
+              </div>
+            </div>
+          </div>
+          <!--Item-->
+          <div class="cabinet-orders__item">
+            <div class="cabinet-orders__heading">
+              <div class="cabinet-orders__line">
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">№123213213</p>
+                  <p class="cabinet-orders__text cabinet-orders__text_grey">21.01.23/14:55</p>
+                </div>
+                <div class="cabinet-orders__flex">
+                  <div class="cabinet-orders__status">
+                    <svg width="18" height="18">
+                      <use xlink:href="assets/img/sprite.svg#cabinet-order-status-icon"></use>
+                    </svg>
+                    <span>Order is accepted</span>
+                  </div>
+                  <p class="cabinet-orders__total">9999 EUR</p>
+                </div>
+              </div>
+              <div class="cabinet-orders__line">
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">Adress</p>
+                  <p class="cabinet-orders__text"><b>Am Postbahnhof 4, 10243 Berlin</b></p>
+                </div>
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">Name</p>
+                  <p class="cabinet-orders__text"><b>Name Surname</b></p>
+                </div>
+                <button class="btn-reset cabinet-orders__more-btn collapsed" data-toggle="collapse"
+                        data-target="#orderNum3">
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprite.svg#arrow-more-icon"></use>
+                  </svg>
+                  <span class="">More</span>
+                </button>
+              </div>
+            </div>
+            <div id="orderNum3" class="collapse cabinet-orders__content" aria-labelledby="orderNum3">
+              <div class="cabinet-orders__captions">
+                <p>Order list</p>
+                <p>Amount</p>
+                <p>Price</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-01.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">1</p>
+                <p class="cat-product__price cabinet-orders__total text-center">8900 EUR</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-02.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">50</p>
+                <p class="cat-product__price cabinet-orders__total text-center">1000 EUR</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-03.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">200</p>
+                <p class="cat-product__price cabinet-orders__total text-center">250 EUR</p>
+              </div>
+            </div>
+          </div>
+          <!--Item-->
+          <div class="cabinet-orders__item">
+            <div class="cabinet-orders__heading">
+              <div class="cabinet-orders__line">
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">№123213213</p>
+                  <p class="cabinet-orders__text cabinet-orders__text_grey">21.01.23/14:55</p>
+                </div>
+                <div class="cabinet-orders__flex">
+                  <div class="cabinet-orders__status">
+                    <svg width="18" height="18">
+                      <use xlink:href="assets/img/sprite.svg#cabinet-order-status-icon"></use>
+                    </svg>
+                    <span>Order is accepted</span>
+                  </div>
+                  <p class="cabinet-orders__total">9999 EUR</p>
+                </div>
+              </div>
+              <div class="cabinet-orders__line">
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">Adress</p>
+                  <p class="cabinet-orders__text"><b>Am Postbahnhof 4, 10243 Berlin</b></p>
+                </div>
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">Name</p>
+                  <p class="cabinet-orders__text"><b>Name Surname</b></p>
+                </div>
+                <button class="btn-reset cabinet-orders__more-btn collapsed" data-toggle="collapse"
+                        data-target="#orderNum5">
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprite.svg#arrow-more-icon"></use>
+                  </svg>
+                  <span class="">More</span>
+                </button>
+              </div>
+            </div>
+            <div id="orderNum5" class="collapse cabinet-orders__content" aria-labelledby="orderNum5">
+              <div class="cabinet-orders__captions">
+                <p>Order list</p>
+                <p>Amount</p>
+                <p>Price</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-01.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">1</p>
+                <p class="cat-product__price cabinet-orders__total text-center">8900 EUR</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-02.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">50</p>
+                <p class="cat-product__price cabinet-orders__total text-center">1000 EUR</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-03.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">200</p>
+                <p class="cat-product__price cabinet-orders__total text-center">250 EUR</p>
+              </div>
+            </div>
+          </div>
+          <!--Item-->
+          <div class="cabinet-orders__item">
+            <div class="cabinet-orders__heading">
+              <div class="cabinet-orders__line">
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">№123213213</p>
+                  <p class="cabinet-orders__text cabinet-orders__text_grey">21.01.23/14:55</p>
+                </div>
+                <div class="cabinet-orders__flex">
+                  <div class="cabinet-orders__status">
+                    <svg width="18" height="18">
+                      <use xlink:href="assets/img/sprite.svg#cabinet-order-status-icon"></use>
+                    </svg>
+                    <span>Order is accepted</span>
+                  </div>
+                  <p class="cabinet-orders__total">9999 EUR</p>
+                </div>
+              </div>
+              <div class="cabinet-orders__line">
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">Adress</p>
+                  <p class="cabinet-orders__text"><b>Am Postbahnhof 4, 10243 Berlin</b></p>
+                </div>
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">Name</p>
+                  <p class="cabinet-orders__text"><b>Name Surname</b></p>
+                </div>
+                <button class="btn-reset cabinet-orders__more-btn collapsed" data-toggle="collapse"
+                        data-target="#orderNum6">
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprite.svg#arrow-more-icon"></use>
+                  </svg>
+                  <span class="">More</span>
+                </button>
+              </div>
+            </div>
+            <div id="orderNum6" class="collapse cabinet-orders__content" aria-labelledby="orderNum6">
+              <div class="cabinet-orders__captions">
+                <p>Order list</p>
+                <p>Amount</p>
+                <p>Price</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-01.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">1</p>
+                <p class="cat-product__price cabinet-orders__total text-center">8900 EUR</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-02.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">50</p>
+                <p class="cat-product__price cabinet-orders__total text-center">1000 EUR</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-03.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">200</p>
+                <p class="cat-product__price cabinet-orders__total text-center">250 EUR</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__content cabinet__content" data-target="history">
+          <div class="col-12">
+            <p class="cabinet__caption">History of orders</p>
+          </div>
+          <!--Item-->
+          <div class="cabinet-orders__item">
+            <div class="cabinet-orders__heading">
+              <div class="cabinet-orders__line">
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">№123213213</p>
+                  <p class="cabinet-orders__text cabinet-orders__text_grey">21.01.23/14:55</p>
+                </div>
+                <div class="cabinet-orders__flex">
+                  <div class="cabinet-orders__status">
+                    <svg width="18" height="18">
+                      <use xlink:href="assets/img/sprite.svg#cabinet-order-status-icon"></use>
+                    </svg>
+                    <span>Order completed</span>
+                  </div>
+                  <p class="cabinet-orders__total">9999 EUR</p>
+                </div>
+              </div>
+              <div class="cabinet-orders__line">
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">Adress</p>
+                  <p class="cabinet-orders__text"><b>Am Postbahnhof 4, 10243 Berlin</b></p>
+                </div>
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">Name</p>
+                  <p class="cabinet-orders__text"><b>Name Surname</b></p>
+                </div>
+                <button class="btn-reset cabinet-orders__more-btn collapsed" data-toggle="collapse"
+                        data-target="#orderNum8">
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprite.svg#arrow-more-icon"></use>
+                  </svg>
+                  <span class="">More</span>
+                </button>
+              </div>
+            </div>
+            <div id="orderNum8" class="collapse cabinet-orders__content" aria-labelledby="orderNum8">
+              <div class="cabinet-orders__captions">
+                <p>Order list</p>
+                <p>Amount</p>
+                <p>Price</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-01.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">1</p>
+                <p class="cat-product__price cabinet-orders__total text-center">8900 EUR</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-02.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">50</p>
+                <p class="cat-product__price cabinet-orders__total text-center">1000 EUR</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-03.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">200</p>
+                <p class="cat-product__price cabinet-orders__total text-center">250 EUR</p>
+              </div>
+            </div>
+          </div>
+          <!--Item (show)-->
+          <div class="cabinet-orders__item">
+            <div class="cabinet-orders__heading">
+              <div class="cabinet-orders__line">
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">№123213213</p>
+                  <p class="cabinet-orders__text cabinet-orders__text_grey">21.01.23/14:55</p>
+                </div>
+                <div class="cabinet-orders__flex">
+                  <div class="cabinet-orders__status">
+                    <svg width="18" height="18">
+                      <use xlink:href="assets/img/sprite.svg#cabinet-order-status-icon"></use>
+                    </svg>
+                    <span>Order completed</span>
+                  </div>
+                  <p class="cabinet-orders__total">9999 EUR</p>
+                </div>
+              </div>
+              <div class="cabinet-orders__line">
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">Adress</p>
+                  <p class="cabinet-orders__text"><b>Am Postbahnhof 4, 10243 Berlin</b></p>
+                </div>
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">Name</p>
+                  <p class="cabinet-orders__text"><b>Name Surname</b></p>
+                </div>
+                <button class="btn-reset cabinet-orders__more-btn" data-toggle="collapse" data-target="#orderNum7">
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprite.svg#arrow-more-icon"></use>
+                  </svg>
+                  <span class="">More</span>
+                </button>
+              </div>
+            </div>
+            <div id="orderNum7" class="collapse cabinet-orders__content show" aria-labelledby="orderNum7">
+              <div class="cabinet-orders__captions">
+                <p>Order list</p>
+                <p>Amount</p>
+                <p>Price</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-01.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">1</p>
+                <p class="cat-product__price cabinet-orders__total text-center">8900 EUR</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-02.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">50</p>
+                <p class="cat-product__price cabinet-orders__total text-center">1000 EUR</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-03.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">200</p>
+                <p class="cat-product__price cabinet-orders__total text-center">250 EUR</p>
+              </div>
+            </div>
+          </div>
+          <!--Item-->
+          <div class="cabinet-orders__item">
+            <div class="cabinet-orders__heading">
+              <div class="cabinet-orders__line">
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">№123213213</p>
+                  <p class="cabinet-orders__text cabinet-orders__text_grey">21.01.23/14:55</p>
+                </div>
+                <div class="cabinet-orders__flex">
+                  <div class="cabinet-orders__status">
+                    <svg width="18" height="18">
+                      <use xlink:href="assets/img/sprite.svg#cabinet-order-status-icon"></use>
+                    </svg>
+                    <span>Order completed</span>
+                  </div>
+                  <p class="cabinet-orders__total">9999 EUR</p>
+                </div>
+              </div>
+              <div class="cabinet-orders__line">
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">Adress</p>
+                  <p class="cabinet-orders__text"><b>Am Postbahnhof 4, 10243 Berlin</b></p>
+                </div>
+                <div class="cabinet-orders__flex">
+                  <p class="cabinet-orders__text">Name</p>
+                  <p class="cabinet-orders__text"><b>Name Surname</b></p>
+                </div>
+                <button class="btn-reset cabinet-orders__more-btn collapsed" data-toggle="collapse"
+                        data-target="#orderNum9">
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprite.svg#arrow-more-icon"></use>
+                  </svg>
+                  <span class="">More</span>
+                </button>
+              </div>
+            </div>
+            <div id="orderNum9" class="collapse cabinet-orders__content" aria-labelledby="orderNum9">
+              <div class="cabinet-orders__captions">
+                <p>Order list</p>
+                <p>Amount</p>
+                <p>Price</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-01.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">1</p>
+                <p class="cat-product__price cabinet-orders__total text-center">8900 EUR</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-02.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">50</p>
+                <p class="cat-product__price cabinet-orders__total text-center">1000 EUR</p>
+              </div>
+              <div class="cabinet-orders__list">
+                <div class="cabinet-orders__flex">
+                  <img src="assets/img/pr-03.jpg" alt="" class="cabinet-orders__img">
+                  <p class="cart__caption">Halogen absorber complete with U-tube</p>
+                </div>
+                <p class="cabinet-orders__count">200</p>
+                <p class="cat-product__price cabinet-orders__total text-center">250 EUR</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

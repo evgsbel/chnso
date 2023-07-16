@@ -298,3 +298,20 @@
     border-radius: 50%;
   }
 }
+
+//payment
+.payment {
+  margin-bottom: 85px;
+  &__wrapper {
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__caption {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
