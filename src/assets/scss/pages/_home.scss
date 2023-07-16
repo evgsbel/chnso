@@ -21,12 +21,19 @@
     color: #fff;
     width: 500px;
     max-width: 100%;
+    @include r(768) {
+      width: 80%;
+      font-size: 30px;
+    }
   }
   &__subtitle {
     line-height: 1.5;
     color: #FAFAFA;
     width: 390px;
     max-width: 100%;
+    @include r(768) {
+      width: 80%;
+    }
   }
   &__navigation {
     margin-top: 20px;
@@ -42,6 +49,10 @@
   &__all-btn {
     margin-left: auto;
     padding: 0 24px;
+    @include r(576) {
+      margin-top: 10px;
+      margin-left: 0;
+    }
   }
   &__nav-btn {
     position: absolute;

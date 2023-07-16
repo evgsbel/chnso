@@ -12161,6 +12161,8 @@ ul {
   height: 40px;
   background-color: #fff;
   cursor: pointer;
+  max-width: 160px;
+  margin-left: auto;
 }
 .mini-cart__icon {
   position: relative;
@@ -12801,11 +12803,22 @@ ul {
   width: 500px;
   max-width: 100%;
 }
+@media only screen and (max-width: 768px) {
+  .hero__title {
+    width: 80%;
+    font-size: 30px;
+  }
+}
 .hero__subtitle {
   line-height: 1.5;
   color: #FAFAFA;
   width: 390px;
   max-width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .hero__subtitle {
+    width: 80%;
+  }
 }
 .hero__navigation {
   margin-top: 20px;
@@ -12820,6 +12833,12 @@ ul {
 .populars__all-btn {
   margin-left: auto;
   padding: 0 24px;
+}
+@media only screen and (max-width: 576px) {
+  .populars__all-btn {
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }
 .populars__nav-btn {
   position: absolute;
