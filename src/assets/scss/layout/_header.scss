@@ -1,8 +1,5 @@
 .header {
   margin: 20px 0 30px;
-  @include r(576) {
-    display: none;
-  }
   &__top {
     padding-bottom: 20px;
   }
@@ -14,6 +11,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include r(768) {
+      justify-content: flex-end;
+      gap: 0 5px;
+    }
+    @include r(576) {
+      margin-top: 15px;
+      justify-content: space-between;
+      gap: 0;
+    }
   }
   &__lang {
     flex: 0 0 auto;
@@ -194,7 +200,8 @@
   height: 18px;
   margin: 0 auto;
   @include r(768) {
-    margin: 0;
+    margin-left: auto;
+    margin-right: 0;
   }
   span {
     display: block;
