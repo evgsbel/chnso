@@ -93,6 +93,10 @@
     @include r(1024) {
       gap: 0 50px;
     }
+    @include r(768) {
+      flex-direction: column;
+      gap: 50px 0;
+    }
   }
   &__item {
     position: relative;

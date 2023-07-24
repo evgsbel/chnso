@@ -3,32 +3,45 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-
+      flex-wrap: wrap;
    }
   &__label {
     font-size: 13px;
     color: $blue;
   }
-    &__input  {
-      display: block;
-      border-radius: 5px;
-      border: 1px solid #BCBCC4;
-      height: 46px;
-      width: 100%;
-      max-width: 100%;
-      padding: 0 15px;
+  &__input  {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #BCBCC4;
+    height: 46px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    font-size: 12px;
+    color: $black;
+    &::placeholder {
       font-size: 12px;
-      color: $black;
-      &::placeholder {
-        font-size: 12px;
-        color: #BCBCC4;
-      }
-      &:active,
-      &:focus {
-        border: 1px solid #3F43FF;
-        outline: none;
-      }
+      color: #BCBCC4;
     }
+    &:active,
+    &:focus {
+      border: 1px solid #3F43FF;
+      outline: none;
+    }
+  }
+  &__select {
+    .select2-container {
+      display: block;
+      width: 100%;
+    }
+    .select2-container--default .select2-selection--single {
+      border: 1px solid #BCBCC4;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+      font-size: 12px;
+      color: $black
+    }
+  }
 }
 
 .search {

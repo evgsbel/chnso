@@ -182,3 +182,16 @@ img {
     cursor: default;
   }
 }
+
+.mobile-hidden {
+  display: block;
+  @include r(768) {
+    display: none;
+  }
+}
+.desktop-hidden {
+  display: block;
+  @include rmin(768) {
+    display: none;
+  }
+}

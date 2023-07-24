@@ -30,15 +30,21 @@
           >
         </label>
         <button class="btn-reset btn btn_orange form__btn modal__btn w-100">Sign in</button>
-        <button type="button" class="btn-reset btn btn_trnsp form__btn modal__btn form__btn_transparent js-close-login w-100" data-toggle="modal" data-target="#register" data-dismiss="modal">Sign up</button>
-        <button type="button" class="modal__link btn-reset"  data-toggle="modal" data-target="#confirm" data-dismiss="modal">Restore password</button>
+        <button type="button"
+                class="btn-reset btn btn_trnsp form__btn modal__btn form__btn_transparent js-close-login w-100"
+                data-toggle="modal" data-target="#register" data-dismiss="modal">Sign up
+        </button>
+        <button type="button" class="modal__link btn-reset" data-toggle="modal" data-target="#confirm"
+                data-dismiss="modal">Restore password
+        </button>
       </form>
     </div>
   </div>
 </div>
 
 <!--register-->
-<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal__form modal-content">
       <form action="" class="form">
@@ -89,7 +95,9 @@
           >
         </label>
         <button class="btn-reset btn btn_orange form__btn modal__btn w-100">Sign up</button>
-        <button class="btn-reset btn btn_trnsp form__btn modal__btn form__btn_transparent w-100" data-toggle="modal" data-dismiss="modal" data-target="#login">Have an account? Sign in</button>
+        <button class="btn-reset btn btn_trnsp form__btn modal__btn form__btn_transparent w-100" data-toggle="modal"
+                data-dismiss="modal" data-target="#login">Have an account? Sign in
+        </button>
       </form>
     </div>
   </div>
@@ -119,14 +127,17 @@
           >
         </label>
         <button type="button" class="btn-reset btn btn_orange form__btn modal__btn w-100">Send</button>
-        <button type="button" class="modal__link btn-reset"  data-toggle="modal" data-dismiss="modal" data-target="#login">Back</button>
+        <button type="button" class="modal__link btn-reset" data-toggle="modal" data-dismiss="modal"
+                data-target="#login">Back
+        </button>
       </form>
     </div>
   </div>
 </div>
 
 <!--callback-->
-<div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal__form modal-content">
       <form action="" class="form">
@@ -168,7 +179,8 @@
 </div>
 
 <!--cart result-->
-<div class="modal fade" id="cart-result" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="cart-result" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal__form modal-content">
       <form action="" class="form">
@@ -178,9 +190,93 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <p class="modal__subcaption">You can track the status and view the content of the order in your personal account.</p>
+        <p class="modal__subcaption">You can track the status and view the content of the order in your personal
+          account.</p>
         <a href="cabinet.html" class="btn-reset btn btn_orange form__btn modal__btn w-100">Go to personal account</a>
       </form>
+    </div>
+  </div>
+</div>
+
+<!--cart product-->
+<div class="modal fade" id="cart-product" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog_products">
+    <div class="modal__form modal__form_products modal-content">
+      <div class="cart__list">
+        <div class="modal__heading">
+          <p class="modal__caption">items in the cart</p>
+          <button type="button" class="close modal__close btn-reset" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="cart__item cart__item_modal">
+          <p class="cart__caption">Halogen absorber complete with U-tube</p>
+          <div class="input-count cart__count">
+            <button class="btn-reset product-card__count-btn input-count__btn input-count_minus" id="minus">-</button>
+            <div class="input-count__wrapper">
+              <input type="number" class="product-card__count-input input-count__input js-input-number" step="1"
+                     min="1"
+                     max="" name="number" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
+            </div>
+            <button class="btn-reset product-card__count-btn input-count__btn input-count_plus" id="plus">+</button>
+          </div>
+          <p class="cat-product__price cart__price">9999 EUR
+            <span class="cart__discount">Discount 300 eur</span>
+          </p>
+        </div>
+        <div class="cart__item cart__item_modal">
+          <p class="cart__caption">Halogen absorber complete with U-tube</p>
+          <div class="input-count cart__count">
+            <button class="btn-reset product-card__count-btn input-count__btn input-count_minus" id="minus">-</button>
+            <div class="input-count__wrapper">
+              <input type="number" class="product-card__count-input input-count__input js-input-number" step="1"
+                     min="1"
+                     max="" name="number" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
+            </div>
+            <button class="btn-reset product-card__count-btn input-count__btn input-count_plus" id="plus">+</button>
+          </div>
+          <p class="cat-product__price cart__price">9999 EUR
+            <span class="cart__discount">Discount 300 eur</span>
+          </p>
+
+        </div>
+        <div class="cart__item cart__item_modal">
+          <p class="cart__caption">Halogen absorber complete with U-tube</p>
+          <div class="input-count cart__count">
+            <button class="btn-reset product-card__count-btn input-count__btn input-count_minus" id="minus">-</button>
+            <div class="input-count__wrapper">
+              <input type="number" class="product-card__count-input input-count__input js-input-number" step="1"
+                     min="1"
+                     max="" name="number" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
+            </div>
+            <button class="btn-reset product-card__count-btn input-count__btn input-count_plus" id="plus">+</button>
+          </div>
+          <p class="cat-product__price cart__price">9999 EUR
+            <span class="cart__discount">Discount 300 eur</span>
+          </p>
+        </div>
+        <div class="cart__item cart__item_modal">
+          <p class="cart__caption">Halogen absorber complete with U-tube</p>
+          <div class="input-count cart__count">
+            <button class="btn-reset product-card__count-btn input-count__btn input-count_minus" id="minus">-</button>
+            <div class="input-count__wrapper">
+              <input type="number" class="product-card__count-input input-count__input js-input-number" step="1"
+                     min="1"
+                     max="" name="number" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
+            </div>
+            <button class="btn-reset product-card__count-btn input-count__btn input-count_plus" id="plus">+</button>
+          </div>
+          <p class="cat-product__price cart__price">9999 EUR
+            <span class="cart__discount">Discount 300 eur</span>
+          </p>
+
+        </div>
+      </div>
+      <div class="cart__modal-total">
+        <span>Total</span>
+        <p class="cat-product__price cart__price">9999 EUR</p>
+      </div>
     </div>
   </div>
 </div>

@@ -165,6 +165,20 @@
     &:last-child {
       margin-bottom: 0;
     }
+    &_modal {
+      grid-template-columns: 1fr 80px 0.5fr;
+      background-color: #fafafa;
+      padding-left: 20px;
+      padding-right: 20px;
+      @include r(768) {
+        justify-content: center;
+      }
+      .cart__count {
+        @include r(768) {
+          margin: 0;
+        }
+      }
+    }
   }
   &__caption {
     font-weight: 700;
@@ -180,6 +194,12 @@
   }
   &__price {
     text-align: center;
+  }
+  &__discount {
+    display: block;
+    font-size: 12px;
+    color: $orange;
+    font-weight: 400;
   }
   &__delete {
     svg {
@@ -199,6 +219,17 @@
     display: block;
     @include r(768) {
       margin: 0 auto 15px;
+    }
+  }
+  &__modal-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    margin-top: 20px;
+    span {
+      font-weight: 700;
+      font-size: 18px;
     }
   }
 }

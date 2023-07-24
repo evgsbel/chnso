@@ -84,24 +84,54 @@ title: Order Page
             </label>
           </div>
           <div class="form__group order__group">
-            <label for="order-address" class="form__label col-md-6">
-              Delivery address (additional charge)
-              <input
-                type="text"
-                class="form__input"
-                name="order-address"
-                id="order-address"
-                placeholder="st Erstree 343 ">
+            <label for="order-country" class="form__label col-md-6 order__select form__select">
+             Select your country
+              <select class="js-select-country" name="order-country" id="order-country">
+                <option></option>
+                <option value="Germany">Germany</option>
+                <option value="Russia">Russia</option>
+                <option value="Italy">Italy</option>
+                <option value="Spain">Spain</option>
+              </select>
             </label>
             <label for="order-comment" class="form__label col-md-6">
-              Comment
+              City
               <input
                 type="text"
                 class="form__input"
                 name="order-comment"
-                id="order-comment"
-                placeholder="Write your comment">
+                id="order-city"
+                placeholder="Write your city">
             </label>
+            <label for="order-street" class="form__label col-md-6">
+              Street, house
+              <input
+                type="text"
+                class="form__input"
+                name="order-street"
+                id="order-street"
+                placeholder="st Erstree 343 ">
+            </label>
+            <label for="order-code" class="form__label col-md-6">
+              Postal code
+              <input
+                type="text"
+                class="form__input"
+                name="order-code"
+                id="order-code"
+                placeholder="Postal code">
+            </label>
+          </div>
+          <div class="form__group order__group">
+          <label for="order-comment" class="form__label col-12">
+            Comment
+            <input
+              type="text"
+              class="form__input"
+              name="order-comment"
+              id="order-comment"
+              placeholder="Write your comment">
+          </label>
           </div>
           <div class="form__group col-md-4">
             <label class="input-file">

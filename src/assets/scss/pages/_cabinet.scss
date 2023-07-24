@@ -146,6 +146,9 @@
     gap: 0 4px;
     font-weight: 500;
     font-size: 10px;
+    background-color: #fff;
+    border-radius: 100px;
+    width: 111px;
   }
   &__total {
     font-size: 14px;
@@ -220,7 +223,6 @@
       margin-bottom: 0;
       border-bottom: none;
     }
-
   }
   &__img {
     width: 70px;
@@ -243,5 +245,34 @@
     @include r(768) {
       margin: 0;
     }
+  }
+  &__pay {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 100px;
+    background-color: $blue;
+    width: 87px;
+  }
+  &__pay-round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    background-color: $orange;
+    border-radius: 50%;
+  }
+  &__repeat {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0 5px;
+    font-weight: 700;
+    font-size: 12px;
+    color: $orange;
   }
 }
