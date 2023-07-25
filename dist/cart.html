@@ -203,10 +203,39 @@
                     </button>
                   </div>
                 </div>
+                <div class="js-stop-header"></div>
               </div>
               <div class="col-lg-3">
-                <div class="cart__total cart-total">
-        <p class="cart-total__caption">Total order amount</p>
+                <div class="fixed-total js-fixed-total  d-block d-lg-none">
+                  <div class="fixed-total__heading">
+                    <div class="fixed-total__wr">
+                      <p class="fixed-total__caption">Total order amount</p>
+                      <div class="fixed-total__icon collapsed" data-toggle="collapse" data-target="#collapseTwo">
+                        <svg width="10" height="6" class="">
+                          <use xlink:href="assets/img/sprite.svg#icon-acc-01"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="collapseTwo" class="collapse fixed-total__hide" aria-labelledby="">
+                    <div class="cart-total__item mt-4">
+                      <p>Price</p>
+                      <p>9999 EUR</p>
+                    </div>
+                    <div class="cart-total__item">
+                      <p>Additional fee (taxes)</p>
+                      <p>99 EUR</p>
+                    </div>
+                    <hr class="cart-total__line">
+                  </div>
+                  <div class="cart-total__item mt-4">
+                    <p>Total</p>
+                    <p>9999 EUR</p>
+                  </div>
+                  <a href="order.html" class="btn-reset btn btn_orange cart-total__btn">Next</a>
+                </div>
+                <div class="cart__total cart-total  d-none d-lg-block" >
+                  <p class="cart-total__caption">Total order amount</p>
                   <div class="cart-total__item">
                     <p>Price</p>
                     <p>9999 EUR</p>
@@ -222,7 +251,9 @@
                   </div>
                   <a href="order.html" class="btn-reset btn btn_orange cart-total__btn">Next</a>
                 </div>
-                <p class="cart__warning">Ordering is available only to authorized users. If you are not authorized, you can leave a purchase request.</p>
+                <p class="cart__warning">Ordering is available only to authorized users. If you are not authorized, you can
+                  leave a purchase request.</p>
+        
               </div>
             </div>
           </div>
