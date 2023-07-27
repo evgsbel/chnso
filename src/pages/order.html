@@ -35,16 +35,27 @@ title: Order Page
       <div class="col-lg-9">
         <form action="" class="order__form form" name="order">
           <div class="form__group order__group">
-            <label for="order-name" class="form__label col-md-4">
-              Full name
+            <label for="order-name" class="form__label col-md-6">
+              Name
               <input
                 type="text"
                 class="form__input"
                 name="order-name"
                 id="order-name"
-                placeholder="Full name">
+                placeholder="Your name">
             </label>
-            <label for="order-phone" class="form__label col-md-4">
+            <label for="order-surname" class="form__label col-md-6">
+              Surname
+              <input
+                type="text"
+                class="form__input"
+                name="order-surname"
+                id="order-surname"
+                placeholder="Your Surname">
+            </label>
+          </div>
+          <div class="form__group order__group">
+            <label for="order-phone" class="form__label col-md-6">
               Phone
               <input
                 type="tel"
@@ -53,7 +64,7 @@ title: Order Page
                 id="order-phone"
                 placeholder="1 2321 2313131">
             </label>
-            <label for="order-email" class="form__label col-md-4">
+            <label for="order-email" class="form__label col-md-6">
               E-mail
               <input
                 type="email"
@@ -73,19 +84,19 @@ title: Order Page
                 id="order-company"
                 placeholder="Company name">
             </label>
-            <label for="order-tim" class="form__label col-md-6">
-              TIN (for legal entities)
+            <label for="order-мфе" class="form__label col-md-6">
+              VAT
               <input
                 type="text"
                 class="form__input"
-                name="order-tim"
-                id="order-tim"
-                placeholder="Full name">
+                name="order-vat"
+                id="order-vat"
+                placeholder="VAT">
             </label>
           </div>
           <div class="form__group order__group">
             <label for="order-country" class="form__label col-md-6 order__select form__select">
-             Select your country
+              Select your country
               <select class="js-select-country" name="order-country" id="order-country">
                 <option></option>
                 <option value="Germany">Germany</option>
@@ -123,15 +134,15 @@ title: Order Page
             </label>
           </div>
           <div class="form__group order__group">
-          <label for="order-comment" class="form__label col-12">
-            Comment
-            <input
-              type="text"
-              class="form__input"
-              name="order-comment"
-              id="order-comment"
-              placeholder="Write your comment">
-          </label>
+            <label for="order-comment" class="form__label col-12">
+              Comment
+              <input
+                type="text"
+                class="form__input"
+                name="order-comment"
+                id="order-comment"
+                placeholder="Write your comment">
+            </label>
           </div>
           <div class="form__group col-md-4">
             <label class="input-file">
@@ -159,7 +170,9 @@ title: Order Page
             <p>9999 EUR</p>
           </div>
           <!--          <input type="submit" form="order" value="Checkout" class="btn-reset btn btn_orange cart-total__btn">-->
-          <button class="btn-reset btn btn_orange cart-total__btn" data-toggle="modal" data-target="#cart-result">Checkout</button>
+          <button class="btn-reset btn btn_orange cart-total__btn" data-toggle="modal" data-target="#cart-result">
+            Checkout
+          </button>
         </div>
       </div>
     </div>
